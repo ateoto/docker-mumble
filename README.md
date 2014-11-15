@@ -26,3 +26,15 @@ $ docker run -p 65738:64738 -p 64738:64738/udp \
     -e MURMUR_SUPER_USER_PASS=notagoodpass \
     -itd ateoto/mumble:1.2.8
 ```
+
+#### Building
+
+If you need other settings defined in the murmur.ini you can clone the repository and make changes and then build.
+
+```bash
+$ docker build -t ateoto/mumble:1.2.8 .
+```
+
+#### Contributing
+
+As for all of my work, pull requests are encouraged.
